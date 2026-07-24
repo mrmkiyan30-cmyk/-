@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
 
 <meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>کتاب من</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:tahoma;
+}
+
 body{
 
-margin:0;
+background:linear-gradient(135deg,#9ad7ff,#edf9ff);
 
-background:linear-gradient(135deg,#8fd3ff,#e6f6ff);
-
-font-family:tahoma;
+height:100vh;
 
 display:flex;
 
@@ -25,13 +28,11 @@ justify-content:center;
 
 align-items:center;
 
-height:100vh;
-
 }
 
 .card{
 
-width:350px;
+width:360px;
 
 background:white;
 
@@ -49,37 +50,51 @@ h1{
 
 color:#1f4b99;
 
+margin-bottom:15px;
+
 }
 
 p{
 
-font-size:18px;
+margin-bottom:25px;
+
+line-height:2;
 
 }
 
-button{
+a{
 
-margin-top:25px;
+display:block;
 
 background:#2f80ed;
 
-border:none;
-
-padding:15px 40px;
-
-font-size:20px;
-
 color:white;
+
+padding:16px;
 
 border-radius:15px;
 
-cursor:pointer;
+text-decoration:none;
+
+font-size:20px;
+
+transition:.3s;
 
 }
 
-button:hover{
+a:hover{
 
-background:#1d6fe0;
+background:#1565c0;
+
+}
+
+.footer{
+
+margin-top:25px;
+
+font-size:14px;
+
+color:#888;
 
 }
 
@@ -99,11 +114,17 @@ background:#1d6fe0;
 
 </p>
 
-<button>
+<a href="book.pdf" target="_blank">
 
 شروع مطالعه
 
-</button>
+</a>
+
+<div class="footer">
+
+نسخه 1.0
+
+</div>
 
 </div>
 
